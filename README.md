@@ -1,3 +1,22 @@
+![AWS](https://img.shields.io/badge/AWS-Cloud%20Architecture-orange?logo=amazonaws)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Architecture](https://img.shields.io/badge/Design-Multi--Tier-blue)
+![Security](https://img.shields.io/badge/Security-Hardened-success)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
+
+![Last Commit](https://img.shields.io/github/last-commit/afisaminou/Secure-and-Scalable-Web-Application-Hosting-on-AWS-)
+![Repo Size](https://img.shields.io/github/repo-size/afisaminou/Secure-and-Scalable-Web-Application-Hosting-on-AWS-)
+![Stars](https://img.shields.io/github/stars/afisaminou/Secure-and-Scalable-Web-Application-Hosting-on-AWS-?style=social)
+
+
+![AWS](https://img.shields.io/badge/AWS-Architecture-orange?logo=amazonaws)
+![Multi-AZ](https://img.shields.io/badge/High%20Availability-Multi--AZ-blue)
+![Auto Scaling](https://img.shields.io/badge/Auto%20Scaling-Enabled-success)
+![RDS](https://img.shields.io/badge/Database-RDS%20MySQL-9cf)
+![Last Commit](https://img.shields.io/github/last-commit/afisaminou/Secure-and-Scalable-Web-Application-Hosting-on-AWS-)
+
+
 # Secure-and-Scalable-Web-Application-Hosting-on-AWS-
 **1. Project Overview:**
 
@@ -95,20 +114,22 @@ Security was implemented using AWS Security Groups:
 
 📈 **Scalability & Availability**
 
-✔ **Auto Scaling Group**
+  **1. Auto Scaling Group**
 - Launch Template with **Amazon Linux 2**
 - Automatic instance replacement
 - Multi‑AZ deployment
 
-✔ **Application Load Balancer**
+  **2. Application Load Balancer**
 - Deployed across **multiple Availability Zones**
 - Health checks for continuous instance monitoring
 
-🧪 **Validation & Testing**
+  **3. Validation & Testing**
+
 Validation included:
 * **Local instance testing:** → curl http://localhost
 * **Interface testing:** → curl http://$(hostname -i)
 * **ALB endpoint testing:** → Accessed via browser using the ALB DNS name
+
 
 **7. Infrastucture Deployment Steps (Simplified)**
 1. Create a custom VPC
@@ -121,9 +142,9 @@ Validation included:
 8. Attach Target Group
 9. Verify Health Checks
 
-🧠 **Key Lessons Learned**
+🧠 **Key Lessons Learned and Takeaways**
 
-**1. Security Group Precision Matters**
+  **1. Security Group Precision Matters**
 
 Even when everything appears correct:
 
@@ -141,7 +162,7 @@ A **single incorrect Security Group reference** can break the entire system.
 
 - ✔ Fix: Match EC2 inbound rule exactly with the ALB SG ID
 
-**2. Timeouts ≠ Application Failure**
+  **2. Timeouts ≠ Application Failure**
 Timeouts often indicate:
 
 - Security Group mismatch
@@ -150,7 +171,7 @@ Timeouts often indicate:
 
 Not necessarily server issues.
 
-**3. AWS Debugging is Layered**
+  **3. AWS Debugging is Layered**
 
 Troubleshooting required checking:
 
@@ -166,4 +187,14 @@ Troubleshooting required checking:
 - Elastic Scalability ✔
 - Secure Access Control ✔
 - Fault Tolerance ✔
+
+
+**8. Future Recommendationsand improvements:**
+
+- WAF Integration
+- CloudWatch Monitoring & Alarms
+- HTTPS with ACM
+- Route 53 Domain Integration
+- CI/CD Pipeline
+
 
