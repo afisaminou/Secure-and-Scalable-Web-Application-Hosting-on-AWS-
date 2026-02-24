@@ -1,31 +1,7 @@
-![AWS](https://img.shields.io/badge/AWS-Cloud%20Architecture-orange?logo=amazonaws)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Architecture](https://img.shields.io/badge/Design-Multi--Tier-blue)
-![Security](https://img.shields.io/badge/Security-Hardened-success)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
-
-
-![Last Commit](https://img.shields.io/github/last-commit/afisaminou/Secure-and-Scalable-Web-Application-Hosting-on-AWS-)
-![Repo Size](https://img.shields.io/github/repo-size/afisaminou/Secure-and-Scalable-Web-Application-Hosting-on-AWS-)
-![Stars](https://img.shields.io/github/stars/afisaminou/Secure-and-Scalable-Web-Application-Hosting-on-AWS-?style=social)
-
-
-![AWS](https://img.shields.io/badge/AWS-Architecture-orange?logo=amazonaws)
-![Multi-AZ](https://img.shields.io/badge/High%20Availability-Multi--AZ-blue)
-![Auto Scaling](https://img.shields.io/badge/Auto%20Scaling-Enabled-success)
-![RDS](https://img.shields.io/badge/Database-RDS%20MySQL-9cf)
-![Last Commit](https://img.shields.io/github/last-commit/afisaminou/Secure-and-Scalable-Web-Application-Hosting-on-AWS-)
-
 
 # Secure-and-Scalable-Web-Application-Hosting-on-AWS-
 
-[![See me build our project1‑VPC](https://img.shields.io/badge/See%20Me%20Build%20Project1--VPC-blue?style=for-the-badge)](https://screenrec.com/share/BAlTGWC2vy)
-
-
 [![Watch Video](https://img.shields.io/badge/▶️%20Watch%20Me%20Build%20Project1--VPC-red?style=for-the-badge)](https://screenrec.com/share/BAlTGWC2vy)
-
-
-[![Build Demo](https://img.shields.io/badge/Build%20Demo-Project1--VPC-0366d6?style=for-the-badge&logo=github)](https://screenrec.com/share/BAlTGWC2vy)
 
 
 **1. Project Overview:**
