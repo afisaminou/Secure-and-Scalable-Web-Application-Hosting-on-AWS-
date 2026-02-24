@@ -28,8 +28,6 @@
 [![Build Demo](https://img.shields.io/badge/Build%20Demo-Project1--VPC-0366d6?style=for-the-badge&logo=github)](https://screenrec.com/share/BAlTGWC2vy)
 
 
-
-
 **1. Project Overview:**
 
 This project demonstrates how to design and deploy a **secure, highly available, and scalable web application architecture** using Amazon Web Services (AWS).
@@ -71,14 +69,73 @@ The infrastructure leverages core AWS services to ensure:
 
 **4. Problem Statement**
 
+**❗ Business Problem**
+
+A growing e‑commerce company was experiencing **frequent website outages, slow page loads,** and **inconsistent customer experiences** during peak traffic events such as product launches and seasonal sales. Their existing single‑server setup created several challenges:
+
+* **No High Availability:** If the server failed, the entire website went offline.
+
+* **No Scalability:** Traffic spikes caused performance degradation and timeouts.
+
+* **Security Risks:** The web server and database were exposed to the public internet.
+
+* **Manual Operations:** Deployments, scaling, and troubleshooting required manual intervention.
+
+* **Limited Observability:** The team lacked visibility into instance health and traffic patterns.
+
+These issues resulted in:
+
+* Lost revenue during outages
+
+* Poor customer satisfaction
+
+* Increased operational overhead
+
+* Difficulty supporting business growth
+
+The company needed a **secure, scalable, fault‑tolerant architecture** that could handle unpredictable traffic while reducing operational burden.
 
 
+**5. Solution: Highly Available, Multi‑Tier AWS Architecture** 
 
+To address these challenges, we designed and deployed a secure, multi‑tier, auto‑scaling architecture on AWS. This solution provides:
 
-**5. Solution** 
+   **1. High Availability**
+* Application Load Balancer distributes traffic across **multiple Availability Zones**
 
+* Auto Scaling Group automatically replaces unhealthy instances
 
+* RDS Multi‑AZ ensures database continuity
 
+  **2. Elastic Scalability**
+* Auto Scaling adjusts capacity based on CPU/traffic
+
+* Load Balancer ensures even distribution
+
+* Architecture supports sudden traffic spikes without downtime
+
+  **3. Strong Security Posture**
+* Public access restricted to ALB only
+
+* EC2 and RDS placed in private subnets
+
+* Security Groups enforce least‑privilege communication
+
+* No direct internet exposure for backend or database
+
+  **4. Operational Efficiency**
+* Launch Templates standardize deployments
+
+* SSM Session Manager enables secure access without SSH keys
+
+* Health checks and auto‑healing reduce manual intervention
+
+  **5. Improved Performance & Reliability**
+* Faster response times under load
+
+* Zero‑downtime scaling
+
+* Resilient infrastructure that continues operating even if an AZ fails
 
 
 **6. Architecture Breakdown**
