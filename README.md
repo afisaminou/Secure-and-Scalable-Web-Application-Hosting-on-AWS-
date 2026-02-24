@@ -18,6 +18,18 @@
 
 
 # Secure-and-Scalable-Web-Application-Hosting-on-AWS-
+
+[![See me build our project1‑VPC](https://img.shields.io/badge/See%20Me%20Build%20Project1--VPC-blue?style=for-the-badge)](https://screenrec.com/share/BAlTGWC2vy)
+
+
+[![Watch Video](https://img.shields.io/badge/▶️%20Watch%20Me%20Build%20Project1--VPC-red?style=for-the-badge)](https://screenrec.com/share/BAlTGWC2vy)
+
+
+[![Build Demo](https://img.shields.io/badge/Build%20Demo-Project1--VPC-0366d6?style=for-the-badge&logo=github)](https://screenrec.com/share/BAlTGWC2vy)
+
+
+
+
 **1. Project Overview:**
 
 This project demonstrates how to design and deploy a **secure, highly available, and scalable web application architecture** using Amazon Web Services (AWS).
