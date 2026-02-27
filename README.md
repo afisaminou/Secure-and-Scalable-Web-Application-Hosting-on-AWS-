@@ -1,7 +1,7 @@
 
 # Secure-and-Scalable-Web-Application-Hosting-on-AWS-
 
-[![Watch Video](https://img.shields.io/badge/▶️%20Watch%20Me%20Build%20Project1--VPC-red?style=for-the-badge)](https://screenrec.com/share/BAlTGWC2vy)
+[![Watch Video](https://img.shields.io/badge/▶️%20Watch%20Me%20Build%20The%20Network%20Infrastructure-red?style=for-the-badge)](https://screenrec.com/share/BAlTGWC2vy)
 
 
 **1. Project Overview:**
