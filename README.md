@@ -157,18 +157,7 @@ Security was implemented using AWS Security Groups:
 
 **This ensures EC2 instances are never directly exposed to the internet.**
 
-📈 **Scalability & Availability**
-
-  **1. Auto Scaling Group**
-- Launch Template with **Amazon Linux 2**
-- Automatic instance replacement
-- Multi‑AZ deployment
-
-  **2. Application Load Balancer**
-- Deployed across **multiple Availability Zones**
-- Health checks for continuous instance monitoring
-
-  **3. Validation & Testing**
+  **Validation & Testing**
 
 Validation included:
 * **Local instance testing:** → curl http://localhost
@@ -249,7 +238,7 @@ This architecture enables the business to:
 
 Ultimately, the company now has a **production‑grade, cloud‑native platform** that supports growth, improves customer experience, and reduces risk.
 
-**9. Future Recommendationsand improvements:**
+**9. Future Recommendations and improvements:**
 
 - WAF Integration
 - CloudWatch Monitoring & Alarms
