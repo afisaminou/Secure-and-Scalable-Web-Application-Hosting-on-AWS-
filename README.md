@@ -1,12 +1,12 @@
 
-# Secure-and-Scalable-Web-Application-Hosting-on-AWS-
+# Secure-and-Scalable-3-Tier Web-Application-Hosting-on-AWS-
 
 [![Watch Video](https://img.shields.io/badge/▶️%20Watch%20Me%20Build%20The%20Network%20Infrastructure-red?style=for-the-badge)](https://screenrec.com/share/BAlTGWC2vy)
 
 
 **1. Project Overview:**
 
-This project demonstrates how to design and deploy a **secure, highly available, and scalable web application architecture** using Amazon Web Services (AWS).
+This project demonstrates how to design and deploy a **secure, highly available, and scalable 3-tier web application** using Amazon Web Services (AWS).
 
 The infrastructure leverages core AWS services to ensure:
 
@@ -40,8 +40,8 @@ The infrastructure leverages core AWS services to ensure:
 **Cloud Infrastructure & Security (AWS)**
 
 - Networking: Amazon VPC (Virtual Private Cloud)
-- Identity & Access Management (IAM): AWS Systems Manager Session Manager
-- Security: Security Groups
+- Identity & Access Management (IAM): AWS Systems Manager Session
+- Security: Inbound and Outbound Security Groups
 
 **4. Problem Statement**
 
@@ -69,7 +69,7 @@ These issues resulted in:
 
 * Difficulty supporting business growth
 
-The company needed a **secure, scalable, fault‑tolerant architecture** that could handle unpredictable traffic while reducing operational burden.
+The company needed a **secure, scalable, fault‑tolerant infrastructure** that could handle unpredictable traffic while reducing operational burden.
 
 
 **5. Solution: Highly Available, Multi‑Tier AWS Architecture** 
@@ -119,7 +119,7 @@ To address these challenges, we designed and deployed a secure, multi‑tier, au
 The application is hosted on:
 * Custom VPC with public and private subnets across two Availability Zones
 * Application Load Balancer (ALB)
-* Frontend and Backend EC2 instancesEC2 Instances (Amazon Linux 2)
+* Frontend and Backend EC2 instances (Amazon Linux 2)
 * Frontend and Backend Auto Scaling Groups (ASG)
 * Security Groups for layered security
 
@@ -145,13 +145,13 @@ Internet → Application Load Balancer → EC2 Instances (Auto Scaling)**
 
 🔐 **Security Design**
 
-Security was implemented using AWS Security Groups:
+Security was implemented using Inbound and Outbound Security Groups rules:
 
-**ALB Security Group**
+**Internet-facing ALB Security Group**
 - **Inbound:** HTTP (80) from 0.0.0.0/0
 - **Outbound:** All traffic
 
-**EC2 Security Group**
+**EC2 Security Group (Public Server)** 
 - **Inbound:** HTTP (80) from **ALB Security Group only**
 - **Outbound:** All traffic
 
@@ -188,14 +188,6 @@ Even when everything appears correct:
 
 A **single incorrect Security Group reference** can break the entire system.
 
-**Example failure encountered:**
-
-- ❌ EC2 SG allowed HTTP from the wrong SG
-
-- ➡ Result: ALB health checks timed out
-
-- ✔ Fix: Match EC2 inbound rule exactly with the ALB SG ID
-
   **2. Timeouts ≠ Application Failure**
 Timeouts often indicate:
 
@@ -222,9 +214,8 @@ Troubleshooting required checking:
 - Secure Access Control ✔
 - Fault Tolerance ✔
 
-
 **8. Business Impact**
-This architecture enables the business to:
+This infrastructure enabled the business to:
 
 * **Handle 10× traffic spikes** without performance degradation
 
@@ -241,7 +232,6 @@ Ultimately, the company now has a **production‑grade, cloud‑native platform*
 **9. Future Recommendations and improvements:**
 
 - WAF Integration
-- CloudWatch Monitoring & Alarms
 - HTTPS with ACM
 - Route 53 Domain Integration
 - CI/CD Pipeline
